@@ -1,3 +1,6 @@
+@use 'variables' as*;
+@use 'sass:color';
+
 .btn {
   display: inline-block;
   background-color: $accent-color;
@@ -9,6 +12,6 @@
   transition: background 0.3s;
 
   &:hover {
-    background-color: lighten($accent-color, 10%);
+    background: color.adjust($accent-color, $lightness: 10%);
   }
 }
